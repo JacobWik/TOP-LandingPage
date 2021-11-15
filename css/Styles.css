@@ -1,12 +1,23 @@
 li {
   list-style-type: none;
 }
-.header {
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+
+.main-header {
   background-color: #1f2937;
   display: flex;
-}
-.main-header {
-  display: flex;
+  color: #f9faf8;
+  font-size: 24px;
+  font-weight: 48px;
+  padding-left: 16px;
 }
 
 .left-header {
@@ -20,27 +31,69 @@ li {
   justify-content: right;
 }
 
-.content {
+.header-links {
   display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.content {
   flex: 1;
+  display: flex;
   flex-direction: column;
 }
 .main-section-one {
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.section-one-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
+}
+
+.section-one-img {
+  flex: 1;
+  display: flex;
+  width: 260px;
+  height: 200px;
+  justify-items: center;
+  align-items: center;
+}
+#fakeimg {
+  background-color: gray;
+  width: 500px;
+  height: 200px;
 }
 
 .main-section-two {
+  flex: 1;
   display: flex;
-  height: 20%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
 .main-section-three {
-  height: 20%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e5e7eb;
+}
+
+.main-section-four {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
 }
 
 .section-two-boxes-container {
@@ -53,11 +106,59 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #3882f6;
+  padding-left: 10%;
+  padding-right: 10%;
+  width: 40%;
+  border-radius: 25px;
+}
+
+.commercial-container-text {
+  color: #f9faf8;
+  flex: 2;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer {
-  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #1f2937;
+}
+
+.inspiring-quote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  padding: 20px;
+  font-size: 36x;
+  font-style: italic;
+  color: #1f2937;
+}
+
+button {
+  width: 100px;
+  background-color: #3882f6;
+  color: #f9faf8;
+  border-color: #f9faf8;
+}
+
+img {
+  width: 60px;
+  height: 60px;
+  border-color: #3882f6;
+  border-radius: 10px;
+}
+
+.box-one,
+.box-two,
+.box-three,
+.box-four {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  width: 170px;
 }
